@@ -3,7 +3,7 @@ A responsive 3-page personal portfolio website built with HTML5, CSS (Box Model 
 
 ---
 
-## 📁 File Structure
+## File Structure
 
 * `[WEBPROG] PIZARRA_index.html` — Main landing and profile page.
 * `[WEBPROG] PIZARRA_skills.html` — Detailed technical skills showcase (opened via `target="_blank"`).
@@ -12,7 +12,7 @@ A responsive 3-page personal portfolio website built with HTML5, CSS (Box Model 
 
 ---
 
-## 🎨 Color Palette
+## Color Palette
 * **Dark Navy:** `#27374D`
 * **Slate Blue:** `#526D82`
 * **Light Blue:** `#9DB2BF`
@@ -20,7 +20,7 @@ A responsive 3-page personal portfolio website built with HTML5, CSS (Box Model 
 
 ---
 
-## 🚀 How to View Locally
+## How to View Locally
 
 1. Clone or download this repository to your local machine.
 2. Open the folder in your code editor (e.g., **Visual Studio Code**).
