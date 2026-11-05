@@ -6,8 +6,8 @@ A responsive 3-page personal portfolio website built with HTML5, CSS (Box Model 
 ## File Structure
 
 * `[WEBPROG] PIZARRA_index.html` — Main landing and profile page.
-* `[WEBPROG] PIZARRA_skills.html` — Detailed technical skills showcase (opened via `target="_blank"`).
-* `[WEBPROG] PIZARRA_contact.html` — Interactive contact card page (opened via `target="_blank"`).
+* `[WEBPROG] PIZARRA_skills.html` — Detailed technical skills showcase.
+* `[WEBPROG] PIZARRA_contact.html` — Interactive contact card page
 * `[WEBPROG] PIZARRA_styles.css` — Shared external stylesheet handling global layouts, CSS Box Model, and Flexbox properties.
 
 ---
