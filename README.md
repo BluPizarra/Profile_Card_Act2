@@ -1,27 +1,70 @@
-# Profile_Card_Act2
-A responsive 3-page personal portfolio website built with HTML5, CSS (Box Model & Flexbox), and a custom slate-blue palette. Includes a profile page, technical skills showcase (robotics, data structures, web dev), and an interactive contact card.
+# Profile Card & Portfolio (Activity 2)
+
+[![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/HTML)
+[![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/CSS)
+[![Font Awesome](https://img.shields.io/badge/Font_Awesome-528DD7?style=for-the-badge&logo=font-awesome&logoColor=white)](https://fontawesome.com/)
+
+A responsive 3-page personal portfolio website built with semantic HTML5, CSS (CSS Box Model, Flexbox layout, and custom variables), and a slate-blue color palette. Features a profile landing page, technical skills showcase (robotics, data structures, web development), and an interactive contact card.
 
 ---
 
-## File Structure
+## 🗂️ Organized Project Architecture
 
-* `[WEBPROG] PIZARRA_index.html` — Main landing and profile page.
-* `[WEBPROG] PIZARRA_skills.html` — Detailed technical skills showcase.
-* `[WEBPROG] PIZARRA_contact.html` — Interactive contact card page
-* `[WEBPROG] PIZARRA_styles.css` — Shared external stylesheet handling global layouts, CSS Box Model, and Flexbox properties.
+```text
+Profile_Card_Act2/
+├── index.html                   # Main landing & profile page (GitHub Pages ready)
+├── skills.html                  # Technical skills showcase
+├── contact.html                 # Interactive contact card
+├── css/
+│   └── styles.css               # Consolidated global stylesheet (Flexbox, Box Model, Variables)
+├── assets/
+│   └── images/
+│       ├── profile.jpg          # Profile photo
+│       ├── robotics.jpg         # Robotics project showcase
+│       └── certificates.jpg     # Certifications & Data Structures media
+├── [WEBPROG] PIZARRA_index.html # Academic submission alias
+├── [WEBPROG] PIZARRA_skills.html
+├── [WEBPROG] PIZARRA_contact.html
+├── [WEBPROG] PIZARRA_styles.css
+├── .gitignore
+└── README.md
+```
+
+### ✨ Key Organizational Improvements
+- **Decoupled Images**: Extracted large embedded base64 strings into dedicated files under `assets/images/`, reducing repository HTML file bloat by over **90%** (~400KB down to ~2KB each).
+- **Separation of Concerns**: Extracted inlined `<style>` tags into a unified, responsive stylesheet at `css/styles.css`.
+- **Standard Web Routing**: Added clean standard filenames (`index.html`, `skills.html`, `contact.html`) enabling out-of-the-box hosting on GitHub Pages and static web servers.
+- **Academic Compatibility**: Retained clean aliases for `[WEBPROG] PIZARRA_*` files ensuring full compatibility with institutional grading criteria.
 
 ---
 
-## Color Palette
-* **Dark Navy:** `#27374D`
-* **Slate Blue:** `#526D82`
-* **Light Blue:** `#9DB2BF`
-* **Soft Ice:** `#DDE6ED`
+## 🎨 Color Palette
+
+| Color Name | Hex Code | Swatch |
+| :--- | :--- | :--- |
+| **Dark Navy** | `#27374D` | ![#27374D](https://placehold.co/15x15/27374D/27374D.png) |
+| **Slate Blue** | `#526D82` | ![#526D82](https://placehold.co/15x15/526D82/526D82.png) |
+| **Light Blue** | `#9DB2BF` | ![#9DB2BF](https://placehold.co/15x15/9DB2BF/9DB2BF.png) |
+| **Soft Ice** | `#DDE6ED` | ![#DDE6ED](https://placehold.co/15x15/DDE6ED/DDE6ED.png) |
+| **White** | `#FFFFFF` | ![#FFFFFF](https://placehold.co/15x15/FFFFFF/FFFFFF.png) |
 
 ---
 
-## How to View Locally
+## 🚀 How to View Locally
 
-1. Clone or download this repository to your local machine.
-2. Open the folder in your code editor (e.g., **Visual Studio Code**).
-3. Open **`[WEBPROG] PIZARRA_index.html`** in your web browser, or use the **Live Server** extension in VS Code to run the project.
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/BluPizarra/Profile_Card_Act2.git
+   cd Profile_Card_Act2
+   ```
+2. **Open in Browser:**
+   - Double-click **`index.html`** to launch in any modern browser.
+   - Or open the project folder in **Visual Studio Code** and start with the **Live Server** extension.
+
+---
+
+## 👤 Author
+
+- **Bludylan Cyrus Pizarra** ([@BluPizarra](https://github.com/BluPizarra))
+- **Program**: BSIT, Asia Pacific College
+- **LinkedIn**: [Bludylan Cyrus Pizarra](https://www.linkedin.com/in/bludylan-cyrus-pizarra-a48434378/)

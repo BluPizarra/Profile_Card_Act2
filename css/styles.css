@@ -1,0 +1,426 @@
+/* ============================================================
+   Profile Card Act 2 - Main Stylesheet
+   Palette:
+     --dark-navy:  #27374D
+     --slate-blue: #526D82
+     --light-blue: #9DB2BF
+     --soft-ice:   #DDE6ED
+     --white:      #FFFFFF
+   ============================================================ */
+
+:root {
+  --dark-navy: #27374D;
+  --slate-blue: #526D82;
+  --light-blue: #9DB2BF;
+  --soft-ice: #DDE6ED;
+  --white: #ffffff;
+  --transition-fast: 0.25s ease;
+}
+
+/* Base Reset & Box Model */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--soft-ice);
+  color: var(--dark-navy);
+  line-height: 1.6;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ============================================================
+   Header & Navigation
+   ============================================================ */
+header {
+  background-color: var(--dark-navy);
+  padding: 1.25rem 2rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.12);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.logo {
+  color: var(--soft-ice);
+  font-size: 1.4rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 1rem;
+}
+
+.nav-links a {
+  color: var(--light-blue);
+  text-decoration: none;
+  font-weight: 600;
+  padding: 0.5rem 1rem;
+  border-radius: 2rem;
+  transition: all var(--transition-fast);
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+  color: var(--white);
+  background-color: var(--slate-blue);
+}
+
+/* ============================================================
+   Main Layout & Cards
+   ============================================================ */
+main {
+  flex: 1;
+  max-width: 1100px;
+  width: 90%;
+  margin: 2.5rem auto;
+}
+
+.card {
+  background-color: var(--white);
+  border-radius: 14px;
+  padding: 2.5rem;
+  box-shadow: 0 8px 24px rgba(39, 55, 77, 0.08);
+  border-left: 6px solid var(--slate-blue);
+  margin-bottom: 2rem;
+}
+
+h1, h2, h3 {
+  color: var(--dark-navy);
+  margin-bottom: 0.75rem;
+}
+
+/* ============================================================
+   Profile / Hero Section (index.html)
+   ============================================================ */
+.hero-flex {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  flex-wrap: wrap;
+}
+
+.profile-img-container {
+  flex: 1;
+  min-width: 220px;
+  text-align: center;
+}
+
+.profile-img-placeholder {
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  border: 4px solid var(--slate-blue);
+  object-fit: cover;
+  background-color: var(--soft-ice);
+  display: block;
+  margin: 0 auto;
+  box-shadow: 0 6px 18px rgba(39, 55, 77, 0.15);
+}
+
+.hero-bio {
+  flex: 2;
+  min-width: 280px;
+}
+
+.hero-subtitle {
+  color: var(--slate-blue);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 0.85rem;
+}
+
+.hero-role {
+  color: var(--slate-blue);
+  font-size: 1.15rem;
+  margin-bottom: 1rem;
+  font-weight: 500;
+}
+
+.badge-container {
+  display: flex;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+  margin-top: 1.25rem;
+}
+
+.badge {
+  background-color: var(--soft-ice);
+  color: var(--dark-navy);
+  padding: 0.45rem 0.9rem;
+  border-radius: 20px;
+  font-weight: 600;
+  font-size: 0.85rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  border: 1px solid var(--light-blue);
+}
+
+/* ============================================================
+   Skills Section (skills.html)
+   ============================================================ */
+.skills-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 1.8rem;
+}
+
+.skill-card {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 1.8rem;
+  border-radius: 12px;
+  border: 1px solid var(--light-blue);
+  box-shadow: 0 4px 12px rgba(39, 55, 77, 0.05);
+  flex-wrap: wrap;
+  transition: transform var(--transition-fast), box-shadow var(--transition-fast);
+}
+
+.skill-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(39, 55, 77, 0.1);
+}
+
+.skill-info {
+  flex: 2;
+  min-width: 260px;
+}
+
+.skill-media {
+  flex: 1;
+  min-width: 220px;
+  text-align: center;
+}
+
+.skill-img-placeholder {
+  width: 100%;
+  max-width: 280px;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 8px;
+  border: 2px solid var(--slate-blue);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+.skill-tag-list {
+  list-style: none;
+  margin-top: 0.8rem;
+}
+
+.skill-tag-list li {
+  margin-bottom: 0.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.tech-pills {
+  display: flex;
+  gap: 0.8rem;
+  margin-top: 1rem;
+  flex-wrap: wrap;
+}
+
+.tech-pill {
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.tech-pill.html {
+  background-color: var(--dark-navy);
+  color: var(--soft-ice);
+}
+
+.tech-pill.css {
+  background-color: var(--slate-blue);
+  color: var(--white);
+}
+
+.tech-pill.js {
+  background-color: var(--light-blue);
+  color: var(--dark-navy);
+}
+
+/* ============================================================
+   Contact Card Section (contact.html)
+   ============================================================ */
+.contact-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-card-box {
+  max-width: 500px;
+  width: 100%;
+  background: var(--white);
+  border-radius: 18px;
+  box-shadow: 0 12px 30px rgba(39, 55, 77, 0.15);
+  overflow: hidden;
+  border: 2px solid var(--light-blue);
+  text-align: center;
+}
+
+.card-header-bg {
+  background: linear-gradient(135deg, var(--dark-navy), var(--slate-blue));
+  height: 120px;
+  position: relative;
+}
+
+.card-photo {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  border: 4px solid var(--white);
+  object-fit: cover;
+  margin-top: -65px;
+  position: relative;
+  background-color: var(--soft-ice);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.card-body {
+  padding: 1.5rem 2rem 2.5rem;
+}
+
+.info-list {
+  list-style: none;
+  text-align: left;
+  margin: 1.8rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1.1rem;
+}
+
+.info-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  word-break: break-word;
+}
+
+.info-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: var(--soft-ice);
+  color: var(--dark-navy);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.15rem;
+  flex-shrink: 0;
+}
+
+/* ============================================================
+   Buttons & Interactive Elements
+   ============================================================ */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  background-color: var(--slate-blue);
+  color: var(--white);
+  padding: 0.75rem 1.6rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background-color var(--transition-fast), transform var(--transition-fast);
+  border: none;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: var(--dark-navy);
+  transform: translateY(-1px);
+}
+
+.btn-full {
+  width: 100%;
+  justify-content: center;
+}
+
+/* ============================================================
+   Footer
+   ============================================================ */
+footer {
+  background-color: var(--dark-navy);
+  color: var(--light-blue);
+  text-align: center;
+  padding: 1.25rem;
+  margin-top: auto;
+  font-size: 0.9rem;
+}
+
+/* ============================================================
+   Responsive Breakpoints
+   ============================================================ */
+@media (max-width: 768px) {
+  header {
+    padding: 1rem;
+  }
+
+  nav {
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+
+  .nav-links {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .hero-flex {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .badge-container {
+    justify-content: center;
+  }
+
+  .card {
+    padding: 1.8rem 1.4rem;
+  }
+
+  .skill-card {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .skill-tag-list li {
+    justify-content: center;
+  }
+
+  .tech-pills {
+    justify-content: center;
+  }
+}
