@@ -8,7 +8,7 @@ A responsive 3-page personal portfolio website built with semantic HTML5, CSS (C
 
 ---
 
-## 🗂️ Organized Project Architecture
+## Organized Project Architecture
 
 ```text
 Profile_Card_Act2/
@@ -30,7 +30,7 @@ Profile_Card_Act2/
 └── README.md
 ```
 
-### ✨ Key Organizational Improvements
+### Key Organizational Improvements
 - **Decoupled Images**: Extracted large embedded base64 strings into dedicated files under `assets/images/`, reducing repository HTML file bloat by over **90%** (~400KB down to ~2KB each).
 - **Separation of Concerns**: Extracted inlined `<style>` tags into a unified, responsive stylesheet at `css/styles.css`.
 - **Standard Web Routing**: Added clean standard filenames (`index.html`, `skills.html`, `contact.html`) enabling out-of-the-box hosting on GitHub Pages and static web servers.
@@ -38,7 +38,7 @@ Profile_Card_Act2/
 
 ---
 
-## 🎨 Color Palette
+## Color Palette
 
 | Color Name | Hex Code | Swatch |
 | :--- | :--- | :--- |
@@ -50,7 +50,7 @@ Profile_Card_Act2/
 
 ---
 
-## 🚀 How to View Locally
+## How to View Locally
 
 1. **Clone the repository:**
    ```bash
@@ -63,7 +63,7 @@ Profile_Card_Act2/
 
 ---
 
-## 👤 Author
+## Author
 
 - **Bludylan Cyrus Pizarra** ([@BluPizarra](https://github.com/BluPizarra))
 - **Program**: BSIT, Asia Pacific College
