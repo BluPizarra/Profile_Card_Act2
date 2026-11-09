@@ -1,8 +1,11 @@
 # Profile Card & Portfolio (Activity 2)
 
+[![Live Website](https://img.shields.io/badge/Live%20Website-Profile%20Card-2ea44f?style=for-the-badge&logo=githubpages&logoColor=white)](https://blupizarra.github.io/Profile_Card_Act2/)
 [![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/HTML)
 [![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/CSS)
 [![Font Awesome](https://img.shields.io/badge/Font_Awesome-528DD7?style=for-the-badge&logo=font-awesome&logoColor=white)](https://fontawesome.com/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](https://opensource.org/licenses/MIT)
+[![Academic](https://img.shields.io/badge/APC-WEBPROG%20Activity%202-B3665B?style=for-the-badge)](https://www.apc.edu.ph/)
 
 A responsive 3-page personal portfolio website built with semantic HTML5, CSS (CSS Box Model, Flexbox layout, and custom variables), and a slate-blue color palette. Features a profile landing page, technical skills showcase (robotics, data structures, web development), and an interactive contact card.
 
